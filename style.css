@@ -1099,4 +1099,11 @@ input:focus-visible {
     top: 15px;
 }
 
+/* Game Card Icons */
+
+.game-icon {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
 
