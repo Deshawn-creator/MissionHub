@@ -1106,4 +1106,12 @@ input:focus-visible {
     margin-bottom: 15px;
 }
 
+/* MissionHub Game Icons */
+
+.game-icon {
+    font-size: 36px;
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
 
