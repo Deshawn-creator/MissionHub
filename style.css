@@ -1114,4 +1114,42 @@ input:focus-visible {
     line-height: 1.2;
 }
 
+/* 404 Error Page */
+
+.error-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+}
+
+.error-page h1 {
+    font-size: 42px;
+    color: #22d3ee;
+    margin-bottom: 20px;
+}
+
+.error-page p {
+    max-width: 500px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.error-home-link {
+    display: inline-block;
+    background: #22d3ee;
+    color: #0f172a;
+    padding: 14px 24px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.error-home-link:hover {
+    background: #67e8f9;
+}
+
 
