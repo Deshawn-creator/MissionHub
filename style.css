@@ -1240,3 +1240,17 @@ input:focus-visible {
 }
 
 
+/* DAY 33 - Example Guide Badge */
+
+.example-badge {
+    display: inline-block;
+    background-color: #164e63;
+    color: #67e8f9;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 7px 12px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+
