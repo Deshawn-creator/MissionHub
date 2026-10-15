@@ -1352,9 +1352,11 @@ html {
     outline-offset: 4px;
 }
 
+
 /* DAY 40 - Practice Guide Count */
 
-.guide-count {
+.guide-status .guide-count {
+    display: block;
     background-color: #0f172a;
     border: 1px solid #334155;
     border-radius: 10px;
@@ -1363,20 +1365,23 @@ html {
     text-align: center;
 }
 
-.guide-count-number {
+.guide-status .guide-count-number {
     display: block;
     color: #22d3ee;
     font-size: 36px;
     font-weight: bold;
+    line-height: 1.2;
 }
 
-.guide-count p {
+.guide-status .guide-count p {
     color: #cbd5e1;
+    font-size: 16px;
     font-weight: bold;
     margin: 8px 0;
 }
 
-.guide-count small {
+.guide-status .guide-count small {
+    display: block;
     color: #94a3b8;
     font-size: 12px;
 }
