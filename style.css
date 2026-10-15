@@ -1387,3 +1387,54 @@ html {
 }
 
 
+/* DAY 41 - Guide Development Progress */
+
+.guide-status .guide-progress {
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.guide-status .guide-progress h3 {
+    color: #f8fafc;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.guide-status .progress-info {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    color: #cbd5e1;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.guide-status .progress-info span:last-child {
+    color: #22d3ee;
+    font-weight: bold;
+}
+
+.guide-status .progress-track {
+    background-color: #334155;
+    height: 12px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.guide-status .progress-fill {
+    background-color: #22d3ee;
+    width: 40%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.guide-status .guide-progress p {
+    color: #94a3b8;
+    font-size: 13px;
+    margin-top: 12px;
+}
+
+
