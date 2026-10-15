@@ -1437,4 +1437,27 @@ html {
     margin-top: 12px;
 }
 
+/* DAY 42 - Progress Bar Animation */
+
+@keyframes fillProgress {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 40%;
+    }
+}
+
+.guide-status .progress-fill {
+    animation: fillProgress 1.5s ease-out forwards;
+}
+
+/* Accessibility: reduce motion when requested */
+@media (prefers-reduced-motion: reduce) {
+    .guide-status .progress-fill {
+        animation: none;
+    }
+}
+
 
