@@ -1329,4 +1329,27 @@ html {
     font-weight: bold;
 }
 
+/* DAY 39 - Guide Status Button */
+
+.guide-status a.status-guide-button {
+    display: inline-block;
+    background-color: #22d3ee;
+    color: #0f172a;
+    padding: 12px 18px;
+    margin-top: 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+}
+
+.guide-status a.status-guide-button:hover {
+    background-color: #67e8f9;
+}
+
+.guide-status a.status-guide-button:focus-visible {
+    outline: 3px solid #67e8f9;
+    outline-offset: 4px;
+}
+
 
