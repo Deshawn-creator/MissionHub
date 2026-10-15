@@ -1225,4 +1225,18 @@ input:focus-visible {
     font-weight: bold;
 }
 
+/* DAY 32 - Guide Status Labels */
+
+.guide-badge {
+    display: inline-block;
+    background-color: #334155;
+    color: #22d3ee;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 7px 12px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
 
