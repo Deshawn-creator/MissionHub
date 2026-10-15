@@ -1277,4 +1277,42 @@ input:focus-visible {
     outline-offset: 4px;
 }
 
+/* DAY 37 - Back to Top Button */
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* DAY 37 - Back to Top Button */
+
+.back-to-top {
+    display: block;
+    width: fit-content;
+    margin: 30px auto;
+    background-color: #22d3ee;
+    color: #0f172a;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+}
+
+
+.back-to-top:hover {
+    background-color: #67e8f9;
+}
+
+.back-to-top:focus-visible {
+    outline: 3px solid #67e8f9;
+    outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}
+
 
