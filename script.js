@@ -86,4 +86,35 @@ if (progressButton) {
 
 }
 
+/* DAY 46 - Toggle Progress Details */
+
+const detailsButton = document.getElementById(
+    "progress-details-button"
+);
+
+const progressDetails = document.getElementById(
+    "progress-details"
+);
+
+if (detailsButton && progressDetails) {
+
+    detailsButton.addEventListener("click", function () {
+
+        progressDetails.hidden = !progressDetails.hidden;
+
+        const isOpen = !progressDetails.hidden;
+
+        detailsButton.textContent = isOpen
+            ? "Hide Progress Details"
+            : "Show Progress Details";
+
+        detailsButton.setAttribute(
+            "aria-expanded",
+            String(isOpen)
+        );
+
+    });
+
+}
+
 

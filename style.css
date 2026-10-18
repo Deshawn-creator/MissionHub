@@ -1532,4 +1532,55 @@ html {
     }
 }
 
+/* DAY 46 - Progress Details Button */
+
+.guide-status .progress-details-button {
+    display: block;
+    width: 100%;
+    background-color: #22d3ee;
+    color: #0f172a;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 16px;
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.guide-status .progress-details-button:hover {
+    background-color: #67e8f9;
+}
+
+.guide-status .progress-details-button:focus-visible {
+    outline: 3px solid #f8fafc;
+    outline-offset: 3px;
+}
+
+.guide-status .progress-details {
+    background-color: #0f172a;
+    border: 1px solid #334155;
+    border-radius: 8px;
+    padding: 15px;
+    margin-top: 15px;
+}
+
+.guide-status .progress-details[hidden] {
+    display: none;
+}
+
+.guide-status .progress-details h4 {
+    color: #f8fafc;
+    margin-bottom: 12px;
+}
+
+.guide-status .progress-details p {
+    color: #cbd5e1;
+    margin: 8px 0;
+}
+
+.guide-status .progress-details small {
+    color: #94a3b8;
+}
+
 
