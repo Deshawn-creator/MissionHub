@@ -43,3 +43,22 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 });
+
+/* DAY 44 - Toggle Progress Tooltip */
+
+const progressButton = document.querySelector(
+    ".progress-track"
+);
+
+if (progressButton) {
+    progressButton.addEventListener("click", function () {
+        const isExpanded =
+            progressButton.getAttribute("aria-expanded") === "true";
+
+        progressButton.setAttribute(
+            "aria-expanded",
+            String(!isExpanded)
+        );
+    });
+}
+

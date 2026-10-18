@@ -1491,4 +1491,45 @@ html {
     visibility: visible;
 }
 
+/* DAY 44 - Mobile-Friendly Progress Tooltip */
+
+.guide-status button.progress-track {
+    display: block;
+    width: 100%;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    appearance: none;
+    position: relative;
+    background-color: #334155;
+    height: 12px;
+    border-radius: 20px;
+    overflow: visible;
+}
+
+.guide-status button.progress-track .progress-fill {
+    display: block;
+}
+
+.guide-status button.progress-track:focus-visible {
+    outline: 3px solid #22d3ee;
+    outline-offset: 5px;
+}
+
+.guide-status button.progress-track[aria-expanded="true"]
+.progress-tooltip {
+    opacity: 1;
+    visibility: visible;
+}
+
+@media (max-width: 600px) {
+    .guide-status .progress-tooltip {
+        left: 50%;
+        max-width: 90vw;
+        white-space: normal;
+        text-align: center;
+        width: max-content;
+    }
+}
+
 
