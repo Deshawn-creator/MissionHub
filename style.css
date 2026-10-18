@@ -1460,4 +1460,35 @@ html {
     }
 }
 
+/* DAY 43 - Progress Bar Tooltip */
+
+.guide-status .progress-track {
+    position: relative;
+    overflow: visible;
+}
+
+.guide-status .progress-tooltip {
+    position: absolute;
+    bottom: 25px;
+    left: 40%;
+    transform: translateX(-50%);
+    background-color: #020617;
+    color: #f8fafc;
+    border: 1px solid #22d3ee;
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-size: 12px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease;
+    pointer-events: none;
+    z-index: 10;
+}
+
+.guide-status .progress-track:hover .progress-tooltip {
+    opacity: 1;
+    visibility: visible;
+}
+
 
