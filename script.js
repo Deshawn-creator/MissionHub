@@ -44,13 +44,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 
-/* DAY 44 - Toggle Progress Tooltip */
+
+/* DAY 45 - Improved Progress Tooltip */
 
 const progressButton = document.querySelector(
     ".progress-track"
 );
 
 if (progressButton) {
+
+    // Open or close when clicking the progress bar
     progressButton.addEventListener("click", function () {
         const isExpanded =
             progressButton.getAttribute("aria-expanded") === "true";
@@ -60,5 +63,27 @@ if (progressButton) {
             String(!isExpanded)
         );
     });
+
+    // Close when clicking somewhere else
+    document.addEventListener("click", function (event) {
+        if (!progressButton.contains(event.target)) {
+            progressButton.setAttribute(
+                "aria-expanded",
+                "false"
+            );
+        }
+    });
+
+    // Close when pressing Escape
+    document.addEventListener("keydown", function (event) {
+        if (event.key === "Escape") {
+            progressButton.setAttribute(
+                "aria-expanded",
+                "false"
+            );
+        }
+    });
+
 }
+
 
