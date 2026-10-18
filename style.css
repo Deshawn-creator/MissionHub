@@ -1689,3 +1689,31 @@ html {
         grid-template-columns: 1fr;
     }
 }
+
+/* DAY 50 - Progress Statistics Hover Effects */
+
+.guide-status .progress-stat {
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+@media (hover: hover) {
+    .guide-status .progress-stat:hover {
+        transform: translateY(-5px);
+        border-color: #22d3ee;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    }
+}
+
+/* Respect reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+    .guide-status .progress-stat {
+        transition: none;
+    }
+
+    .guide-status .progress-stat:hover {
+        transform: none;
+    }
+}
