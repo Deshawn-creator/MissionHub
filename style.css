@@ -1651,3 +1651,41 @@ html {
         transition: none;
     }
 }
+
+/* DAY 49 - Progress Statistics Grid */
+
+.guide-status .progress-stats {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+    margin: 20px 0;
+}
+
+.guide-status .progress-stat {
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 10px;
+    padding: 18px 8px;
+    text-align: center;
+}
+
+.guide-status .stat-number {
+    display: block;
+    color: #22d3ee;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.guide-status .stat-label {
+    display: block;
+    color: #cbd5e1;
+    font-size: 13px;
+}
+
+/* Day 49 - Small Screen Layout */
+@media (max-width: 400px) {
+    .guide-status .progress-stats {
+        grid-template-columns: 1fr;
+    }
+}
