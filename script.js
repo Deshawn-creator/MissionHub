@@ -86,7 +86,8 @@ if (progressButton) {
 
 }
 
-/* DAY 46 - Toggle Progress Details */
+
+/* DAY 48 - Progress Details with Rotating Arrow */
 
 const detailsButton = document.getElementById(
     "progress-details-button"
@@ -96,15 +97,19 @@ const progressDetails = document.getElementById(
     "progress-details"
 );
 
-if (detailsButton && progressDetails) {
+const detailsButtonText = document.querySelector(
+    ".details-button-text"
+);
+
+if (detailsButton && progressDetails && detailsButtonText) {
 
     detailsButton.addEventListener("click", function () {
 
-        progressDetails.hidden = !progressDetails.hidden;
+        const isOpen = progressDetails.classList.toggle(
+            "is-open"
+        );
 
-        const isOpen = !progressDetails.hidden;
-
-        detailsButton.textContent = isOpen
+        detailsButtonText.textContent = isOpen
             ? "Hide Progress Details"
             : "Show Progress Details";
 

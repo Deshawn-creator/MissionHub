@@ -1583,4 +1583,71 @@ html {
     color: #94a3b8;
 }
 
+/* DAY 48 - Rotating Details Arrow */
 
+.guide-status .progress-details-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.guide-status .details-arrow {
+    display: inline-block;
+    font-size: 12px;
+    transition: transform 0.3s ease;
+}
+
+.guide-status .progress-details-button[aria-expanded="true"]
+.details-arrow {
+    transform: rotate(180deg);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .guide-status .details-arrow {
+        transition: none;
+    }
+}
+
+
+
+/* DAY 48 - Fix Progress Details Panel */
+
+.guide-status .progress-details {
+    display: grid;
+    grid-template-rows: 0fr;
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    border-width: 0;
+
+    transition:
+        grid-template-rows 0.4s ease,
+        opacity 0.4s ease,
+        padding 0.4s ease,
+        margin 0.4s ease,
+        visibility 0.4s;
+}
+
+.guide-status .progress-details.is-open {
+    grid-template-rows: 1fr;
+    opacity: 1;
+    visibility: visible;
+    padding: 15px;
+    margin-top: 15px;
+    border-width: 1px;
+}
+
+.guide-status .progress-details-inner {
+    min-height: 0;
+    overflow: hidden;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .guide-status .progress-details {
+        transition: none;
+    }
+}

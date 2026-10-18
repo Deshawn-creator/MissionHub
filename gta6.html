@@ -207,34 +207,45 @@
 
     <p>2 of 5 planned practice walkthroughs created.</p>
 
-<!-- DAY 46 - Progress Details -->
+
+<!-- DAY 48 - Progress Details Button with Arrow -->
 <button
     id="progress-details-button"
     class="progress-details-button"
     type="button"
     aria-expanded="false"
     aria-controls="progress-details">
-    Show Progress Details
+
+    <span class="details-button-text">
+        Show Progress Details
+    </span>
+
+    <span class="details-arrow" aria-hidden="true">
+        ▼
+    </span>
+
 </button>
 
-<div id="progress-details"
-     class="progress-details"
-     hidden>
 
-    <h4>Practice Walkthrough Milestone</h4>
+ 
+<!-- DAY 48 - Animated Progress Details Panel -->
+<div id="progress-details" class="progress-details">
+    <div class="progress-details-inner">
 
-    <p>Completed: 2 practice guides</p>
-    <p>Learning target: 5 practice guides</p>
-    <p>Remaining: 3 practice guides</p>
+        <h4>Practice Walkthrough Milestone</h4>
 
-    <small>
-        These are website practice examples,
-        not confirmed GTA 6 missions.
-    </small>
+        <p>Completed: 2 practice guides</p>
+        <p>Learning target: 5 practice guides</p>
+        <p>Remaining: 3 practice guides</p>
 
+        <small>
+            These are website practice examples,
+            not confirmed GTA 6 missions.
+        </small>
+
+    </div>
 </div>
 
-</div>
 
 <!-- DAY 43 - Progress Milestone Message -->
 <div class="progress-milestone">
