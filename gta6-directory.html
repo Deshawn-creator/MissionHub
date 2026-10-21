@@ -1,0 +1,217 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GTA 6 Mission Directory | MissionHub</title>
+
+    <meta name="description"
+          content="Browse GTA 6 mission walkthroughs and guides on MissionHub.">
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .directory-container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .directory-heading {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .directory-heading h1 {
+            margin-bottom: 12px;
+        }
+
+        .directory-heading p {
+            color: #b8c8dd;
+        }
+
+        .directory-search {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid #37526e;
+            border-radius: 10px;
+            background: #15263d;
+            color: white;
+            font-size: 16px;
+        }
+
+        .directory-search:focus {
+            outline: 2px solid #43d8f2;
+        }
+
+        .directory-card {
+            background: #15263d;
+            border: 1px solid #304963;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 12px;
+        }
+
+        .directory-card h2 {
+            margin-bottom: 10px;
+            color: white;
+        }
+
+        .directory-card p {
+            color: #b8c8dd;
+            margin-bottom: 15px;
+        }
+
+        .directory-card a {
+            color: #43d8f2;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .directory-card a:hover {
+            text-decoration: underline;
+        }
+
+        .directory-message {
+            text-align: center;
+            padding: 40px 20px;
+            color: #b8c8dd;
+        }
+
+        .directory-pagination {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 25px;
+        }
+
+        .directory-pagination button {
+            padding: 10px 15px;
+            background: #15263d;
+            border: 1px solid #43d8f2;
+            border-radius: 8px;
+            color: white;
+            cursor: pointer;
+        }
+
+        .directory-pagination button.active {
+            background: #43d8f2;
+            color: #0a1425;
+        }
+
+        .directory-pagination button:hover {
+            opacity: 0.85;
+        }
+    </style>
+</head>
+
+<body id="top">
+
+    <a href="#main-content" class="skip-link">
+        Skip to main content
+    </a>
+
+    <!-- Navigation -->
+    <header class="site-header">
+        <nav class="navbar">
+
+            <a href="index.html" class="logo">
+                <span class="logo-icon">🎮</span>
+                MISSIONHUB
+            </a>
+
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="index.html#games">Games</a>
+                <a href="gta6.html">GTA 6</a>
+                <a href="gta6-directory.html"
+                   class="active"
+                   aria-current="page">
+                    Guides
+                </a>
+            </div>
+
+        </nav>
+    </header>
+
+    <!-- Mission Directory -->
+    <main id="main-content" class="directory-container">
+
+        <div class="directory-heading">
+            <h1>GTA 6 Mission Walkthroughs</h1>
+
+            <p>
+                Browse mission guides, objectives,
+                and step-by-step walkthroughs.
+            </p>
+        </div>
+
+        <!-- Search -->
+        <label for="missionSearch">
+            Search Mission Guides
+        </label>
+
+        <input
+            type="search"
+            id="missionSearch"
+            class="directory-search"
+            placeholder="Search missions..."
+        >
+
+        <!-- Mission List -->
+        <div id="missionList"></div>
+
+        <!-- Pagination -->
+        <nav
+            id="pagination"
+            class="directory-pagination"
+            aria-label="Mission directory pages">
+        </nav>
+
+    </main>
+
+    <!-- Back to Top -->
+    <a href="#top" class="back-to-top">
+        ↑ Back to Top
+    </a>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+
+        <div class="footer-container">
+
+            <div class="footer-brand">
+                <h2>🎮 MISSIONHUB</h2>
+                <p>
+                    Your destination for gaming walkthroughs,
+                    mission guides, and helpful tips.
+                </p>
+            </div>
+
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="gta6.html">GTA 6</a>
+                <a href="gta6-directory.html">Guides</a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 MissionHub. All rights reserved.</p>
+            <p>
+                Independent gaming guide website.
+                Not affiliated with Rockstar Games.
+            </p>
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
