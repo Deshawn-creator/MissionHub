@@ -33,7 +33,7 @@ body {
 
 .logo {
   color: #22d3ee;
-  font-size: 24px;
+  font-size: 28px;
   font-weight: bold;
   text-decoration: none;
 }
@@ -354,7 +354,7 @@ html {
 
 @media (max-width: 600px) {
     .logo {
-        font-size: 21px;
+        font-size: 24px;
     }
 
     .nav-links {
@@ -619,7 +619,7 @@ html {
     }
 
     .logo {
-        font-size: 22px;
+        font-size: 24px;
     }
 
     .nav-links {
