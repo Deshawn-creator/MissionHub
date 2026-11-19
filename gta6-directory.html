@@ -106,7 +106,12 @@
             color: #0a1425;
         }
 
-        .directory-pagination button:hover {
+        .directory-pagination button:disabled {
+            opacity: 0.45;
+            cursor: default;
+        }
+
+        .directory-pagination button:not(:disabled):hover {
             opacity: 0.85;
         }
         .directory-walkthrough {
@@ -164,7 +169,7 @@
     <main id="main-content" class="directory-container">
 
         <div class="directory-heading">
-            <h1>GTA 6 Mission Walkthroughs</h1>
+            <h1 id="directoryTitle" tabindex="-1">GTA 6 Mission Walkthroughs</h1>
 
             <p>
                 Select a mission to open its walkthrough. Early jobs can appear in a different order.
@@ -516,17 +521,34 @@
             pagination.replaceChildren();
 
             const pageCount = Math.ceil(matches.length / pageSize);
-            for (let number = 1; number <= pageCount && pageCount > 1; number++) {
-                const button = document.createElement("button");
-                button.type = "button";
-                button.textContent = number;
-                if (number === page) {
-                    button.classList.add("active");
-                    button.setAttribute("aria-current", "page");
-                }
-                button.addEventListener("click", () => showMissions(number));
-                pagination.append(button);
+            if (pageCount <= 1) {
+                return;
             }
+
+            addPageButton("Previous", page - 1, { disabled: page === 1 });
+            for (let number = 1; number <= pageCount; number++) {
+                addPageButton(number, number, { current: number === page });
+            }
+            addPageButton("Next", page + 1, { disabled: page === pageCount });
+        }
+
+        function addPageButton(label, targetPage, { current = false, disabled = false }) {
+            const button = document.createElement("button");
+            button.type = "button";
+            button.textContent = label;
+            button.disabled = disabled;
+            if (current) {
+                button.classList.add("active");
+                button.setAttribute("aria-current", "page");
+            }
+            if (typeof label === "number") {
+                button.setAttribute("aria-label", `Page ${label}`);
+            }
+            button.addEventListener("click", () => {
+                showMissions(targetPage);
+                document.getElementById("directoryTitle").focus();
+            });
+            pagination.append(button);
         }
 
         search.addEventListener("input", () => showMissions());
