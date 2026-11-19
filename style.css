@@ -1666,3 +1666,38 @@ html {
         opacity 0.4s ease,
         padding 0.4s ease;
 }
+
+
+/* VantaZero guide navigation */
+.hero h1 span,
+.nav-links a.active,
+.nav-links a:hover,
+.nav-links a:focus-visible {
+    color: #b58af0;
+}
+
+.btn,
+.game-card a.guide-button {
+    background-color: #663e9e;
+    color: #fff;
+}
+
+.btn:hover,
+.game-card a.guide-button:hover {
+    background-color: #7748b7;
+}
+
+.btn:focus-visible,
+.game-card a.guide-button:focus-visible {
+    outline: 2px solid #b58af0;
+    outline-offset: 3px;
+}
+
+.featured-game {
+    margin-top: 16px;
+    border-color: #663e9e;
+}
+
+.featured-game a {
+    color: #b58af0;
+}
