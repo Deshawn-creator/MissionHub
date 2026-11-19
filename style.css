@@ -32,7 +32,7 @@ body {
 }
 
 .logo {
-  color: #dfc4ff;
+  color: #f6f5fa;
   font-size: 28px;
   font-weight: bold;
   text-decoration: none;
@@ -326,32 +326,39 @@ html {
     display: flex;
     align-items: center;
     gap: 10px;
-    padding: 4px 12px 4px 4px;
-    background: #070609;
-    border: 1px solid #684397;
-    border-radius: 8px 2px 8px 2px;
-    box-shadow: inset 0 -2px 0 #29163e;
     letter-spacing: 0.02em;
 }
 
+.logo-accent {
+    color: #8d60c8;
+}
+
 .logo-icon {
+    position: relative;
     display: grid;
     place-items: center;
-    width: 34px;
-    height: 34px;
+    width: 40px;
+    height: 40px;
     flex-shrink: 0;
-    background: #100b17;
-    border: 1px solid #513173;
-    border-radius: 5px 1px 5px 1px;
-    font-size: 0;
+    background: #34323b;
+    clip-path: polygon(12% 0, 88% 0, 100% 12%, 100% 88%, 88% 100%, 12% 100%, 0 88%, 0 12%);
 }
 
 .logo-icon::before {
     content: "";
-    width: 20px;
-    height: 18px;
-    background: #b37af4;
-    clip-path: polygon(0 0, 28% 0, 50% 55%, 72% 0, 100% 0, 60% 100%, 40% 100%);
+    position: absolute;
+    inset: 1px;
+    background: #080709;
+    clip-path: inherit;
+}
+
+.logo-icon::after {
+    content: "";
+    position: relative;
+    width: 26px;
+    height: 23px;
+    background: #794caf;
+    clip-path: polygon(0 0, 27% 0, 50% 55%, 73% 0, 98% 0, 39% 100%, 100% 5%, 62% 100%, 39% 100%);
 }
 
 .nav-links a {
