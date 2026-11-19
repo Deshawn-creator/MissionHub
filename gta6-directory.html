@@ -56,8 +56,10 @@
             margin-bottom: 12px;
         }
 
-        .directory-card h2 {
-            margin-bottom: 10px;
+        .directory-card summary {
+            cursor: pointer;
+            font-size: 1.2rem;
+            font-weight: bold;
             color: white;
         }
 
@@ -107,6 +109,25 @@
         .directory-pagination button:hover {
             opacity: 0.85;
         }
+        .directory-walkthrough {
+            margin-top: 16px;
+        }
+
+        .directory-steps h3 {
+            margin: 16px 0 8px;
+        }
+
+        .directory-steps ol {
+            padding-left: 24px;
+        }
+
+        .directory-steps li {
+            margin-bottom: 8px;
+        }
+
+        .guide-source {
+            margin-top: 18px;
+        }
     </style>
 </head>
 
@@ -146,8 +167,7 @@
             <h1>GTA 6 Mission Walkthroughs</h1>
 
             <p>
-                Browse mission guides, objectives,
-                and step-by-step walkthroughs.
+                Select a mission to open its walkthrough. Early jobs can appear in a different order.
             </p>
         </div>
 
@@ -164,7 +184,269 @@
         >
 
         <!-- Mission List -->
-        <div id="missionList"></div>
+        <div id="missionList">
+            <details id="prologue" class="directory-card">
+                <summary>1. Prologue</summary>
+                <div class="directory-walkthrough">
+                    <p>Follow Lucia through the opening prison sequence and flashback.</p>
+                    <section class="directory-steps">
+                        <h3>How to Start</h3>
+                        <p>Begin a new game as Lucia at Hamlet Prison.</p>
+                    </section>
+
+                    <section class="directory-steps">
+                        <h3>Mission Walkthrough</h3>
+                        <ol>
+                            <li>Speak to your cellmates, then follow the guard to the counselor’s office.</li>
+                            <li>During the flashback, follow the prompts at the payday loan shop to take the cash and break free when a bystander grabs Lucia.</li>
+                            <li>Run from the police until the scene changes. When you regain control, return to the marked coffee shop.</li>
+                        </ol>
+                    </section>
+
+                    <section class="directory-steps">
+                        <h3>If you’re stuck</h3>
+                        <p>Lucia’s arrest at the coffee shop is scripted. Keep heading toward the marker to finish the prologue.</p>
+                    </section>
+
+                    <p class="guide-source">Source <a href="https://www.powerpyx.com/gta-6-prologue-walkthrough/">PowerPyx’s Prologue walkthrough</a></p>
+                </div>
+            </details>
+
+            <details id="gone-fishing" class="directory-card">
+                <summary>2. Gone Fishing</summary>
+                <div class="directory-walkthrough">
+                    <p>Recover the floating packages and bring Donnie back to the marina.</p>
+                    <section class="directory-steps">
+                        <h3>How to Start</h3>
+                        <p>Begins automatically as Jason after the Prologue.</p>
+                    </section>
+
+                    <section class="directory-steps">
+                        <h3>Mission Walkthrough</h3>
+                        <ol>
+                            <li>Follow Donnie’s seaplane by boat. Slow down beside each floating package so Cal can pull it aboard.</li>
+                            <li>Follow the route to the swamp and watch the meeting at the dock through your binoculars. After Donnie is taken, dock and head to the shack at the far end of camp.</li>
+                            <li>Wait for the guard by the entrance to move, then go in and untie Donnie. Get back to the seaplane and fly to Brian’s Marina. Slow down over the water to land and taxi toward the dock.</li>
+                        </ol>
+                    </section>
+
+                    <section class="directory-steps">
+                        <h3>Optional pickup</h3>
+                        <p>Look for the red-and-white trailer on the way to the plane if you want to recover the cash Donnie calls out.</p>
+                    </section>
+
+                    <p class="guide-source">Source <a href="https://www.powerpyx.com/gta-6-gone-fishing-walkthrough/">PowerPyx’s Gone Fishing walkthrough</a></p>
+                </div>
+            </details>
+
+            <details id="gear-up" class="directory-card">
+                <summary>3. Gear Up (Pick Up Another Gun)</summary>
+                <div class="directory-walkthrough">
+                    <p>Buy a longarm and get through the ambush outside the gun shop.</p>
+                    <section class="directory-steps">
+                        <h3>How to Start</h3>
+                        <p><strong>Map label</strong> · Pick Up Another Gun</p>
+                        <p>Visit the gun shop near Jason’s house in Key Lento after Gone Fishing.</p>
+                    </section>
+
+                    <section class="directory-steps">
+                        <h3>Mission Walkthrough</h3>
+                        <ol>
+                            <li>Speak to Andrew at the counter and buy a shotgun or tactical rifle. Check your cash before choosing.</li>
+                            <li>When you leave the shop, Kingfishers arrive in a truck. Deal with the ambush and wait for the call that wraps up the mission.</li>
+                        </ol>
+                    </section>
+
+
+                    <p class="guide-source">Source <a href="https://www.powerpyx.com/gta-6-gear-up-pick-up-another-gun-walkthrough/">PowerPyx’s Gear Up walkthrough</a></p>
+                </div>
+            </details>
+
+            <details id="lab-fees" class="directory-card">
+                <summary>4. Lab Fees (Collect Brian’s Rent)</summary>
+                <div class="directory-walkthrough">
+                    <p>Collect payment from the boutique and deliver it to Brian’s lockup.</p>
+                    <section class="directory-steps">
+                        <h3>How to Start</h3>
+                        <p><strong>Map label</strong> · Collect Brian’s Rent</p>
+                        <p>Go to the marked boutique in Key Lento after Gone Fishing. If the door is locked, call Brian.</p>
+                    </section>
+
+                    <section class="directory-steps">
+                        <h3>Mission Walkthrough</h3>
+                        <ol>
+                            <li>Speak to the clerk about the rent. Follow the confrontation prompt until he offers the goods in the back room as payment.</li>
+                            <li>Enter 0420 at the lab keypad and pick up the package.</li>
+                            <li>Call Brian again, then go to his lockup. Enter 7700 and place the package in the stash.</li>
+                        </ol>
+                    </section>
+
+                    <section class="directory-steps">
+                        <h3>Reward</h3>
+                        <p>Check the mailbox outside Jason’s house later for $600.</p>
+                    </section>
+
+                    <p class="guide-source">Source <a href="https://www.powerpyx.com/gta-6-lab-fees-collect-brians-rent-walkthrough/">PowerPyx’s Lab Fees walkthrough</a></p>
+                </div>
+            </details>
+
+            <details id="just-a-scratch" class="directory-card">
+                <summary>5. Just a Scratch (Fix Your Car)</summary>
+                <div class="directory-walkthrough">
+                    <p>Repair and repaint Jason’s Ganado at Joey’s garage.</p>
+                    <section class="directory-steps">
+                        <h3>How to Start</h3>
+                        <p><strong>Map label</strong> · Fix Your Car</p>
+                        <p>Bring Jason’s ’70 Ganado to Joey’s garage in Key Lento after Gone Fishing.</p>
+                    </section>
+
+                    <section class="directory-steps">
+                        <h3>Mission Walkthrough</h3>
+                        <ol>
+                            <li>Talk to Joey outside, then drive the Ganado into the garage.</li>
+                            <li>Select Full Engine for the repair. Open Cosmetics → Respray and choose a color to finish.</li>
+                        </ol>
+                    </section>
+
+                    <section class="directory-steps">
+                        <h3>If you’re stuck</h3>
+                        <p>Use Jason’s personal car for this objective. If you destroyed it, saving and reloading can bring it back outside his house.</p>
+                    </section>
+
+                    <p class="guide-source">Source <a href="https://www.powerpyx.com/gta-6-just-a-scratch-fix-your-car-walkthrough/">PowerPyx’s Just a Scratch walkthrough</a></p>
+                </div>
+            </details>
+
+            <details id="unwanted-attention" class="directory-card">
+                <summary>6. Unwanted Attention (Go See Cal)</summary>
+                <div class="directory-walkthrough">
+                    <p>Retrieve the Phoenix from the impound and deliver it to Brian’s garage.</p>
+                    <section class="directory-steps">
+                        <h3>How to Start</h3>
+                        <p><strong>Map label</strong> · Go See Cal</p>
+                        <p>Meet Cal at the beach in northern Key Lento after Gone Fishing.</p>
+                    </section>
+
+                    <section class="directory-steps">
+                        <h3>Mission Walkthrough</h3>
+                        <ol>
+                            <li>Drive with Cal to the Hamlet impound. Climb the first fence and use the containers at the back to get over the next one.</li>
+                            <li>Look for the red Imponte Phoenix attached to a tow truck. Get into the truck, click the right stick to release the car, then switch to the Phoenix.</li>
+                            <li>Pull up to the exit and wait for the gate to open. Drive out of the flashing search area, then take the Phoenix to the marked Pay ’n’ Spray.</li>
+                            <li>Drop the car at Brian’s garage and collect $150 in the back room. Change your hat and glasses through the item wheel, then buy an outfit at the marked gun shop.</li>
+                        </ol>
+                    </section>
+
+
+                    <p class="guide-source">Source <a href="https://www.powerpyx.com/gta-6-unwanted-attention-go-see-cal-walkthrough/">PowerPyx’s Unwanted Attention walkthrough</a></p>
+                </div>
+            </details>
+
+            <details id="pipework" class="directory-card">
+                <summary>7. Pipework (Collect Mandy’s Rent)</summary>
+                <div class="directory-walkthrough">
+                    <p>Find the plunger and fix Mandy’s kitchen sink.</p>
+                    <section class="directory-steps">
+                        <h3>How to Start</h3>
+                        <p><strong>Map label</strong> · Collect Mandy’s Rent</p>
+                        <p>Talk to Mandy outside her Key Lento house after finishing Gear Up, Lab Fees, Just a Scratch, and Unwanted Attention.</p>
+                    </section>
+
+                    <section class="directory-steps">
+                        <h3>Mission Walkthrough</h3>
+                        <ol>
+                            <li>Follow Mandy inside. The plunger is on the bathroom floor across from the bedroom.</li>
+                            <li>Go to the kitchen sink. On Xbox, click the right stick for the plunger prompt, then press RT when prompted to use the wrench.</li>
+                            <li>Finish the conversation. On your way out, you can pick up the Macizo Cigar she throws outside.</li>
+                        </ol>
+                    </section>
+
+
+                    <p class="guide-source">Source <a href="https://www.powerpyx.com/gta-6-pipework-collect-mandys-rent-walkthrough/">PowerPyx’s Pipework walkthrough</a></p>
+                </div>
+            </details>
+
+            <details id="hey-arnold" class="directory-card">
+                <summary>8. Hey Arnold! (Meet Brian)</summary>
+                <div class="directory-walkthrough">
+                    <p>Help Brian track down Arnold and follow him to the docks.</p>
+                    <section class="directory-steps">
+                        <h3>How to Start</h3>
+                        <p><strong>Map label</strong> · Meet Brian</p>
+                        <p>After Pipework, wait for Brian’s call and meet him at the pool bar in southern Key Lento.</p>
+                    </section>
+
+                    <section class="directory-steps">
+                        <h3>Mission Walkthrough</h3>
+                        <ol>
+                            <li>Get in Brian’s car and stop at the liquor store to pick up Cal.</li>
+                            <li>Drive toward the pink search area near the radar station. As you get closer, the game pinpoints Arnold’s location.</li>
+                            <li>Follow Arnold by car, then continue on foot when he runs. Catch up to him at the docks and make your choice when he surrenders.</li>
+                        </ol>
+                    </section>
+
+                    <section class="directory-steps">
+                        <h3>Choice</h3>
+                        <p>Letting Arnold go completes the mission.</p>
+                    </section>
+
+                    <p class="guide-source">Source <a href="https://www.powerpyx.com/gta-6-hey-arnold-meet-brian-walkthrough/">PowerPyx’s Hey Arnold! walkthrough</a></p>
+                </div>
+            </details>
+
+            <details id="island-dreams" class="directory-card">
+                <summary>9. Island Dreams (Work for Kenton)</summary>
+                <div class="directory-walkthrough">
+                    <p>Dive for three treasures and bring the group back to the boat.</p>
+                    <section class="directory-steps">
+                        <h3>How to Start</h3>
+                        <p><strong>Map label</strong> · Work for Kenton</p>
+                        <p>Meet Kenton at the Island Dreams shop by the beach after Hey Arnold!</p>
+                    </section>
+
+                    <section class="directory-steps">
+                        <h3>Mission Walkthrough</h3>
+                        <ol>
+                            <li>Take the boat to the dive marker. Put on the yellow scuba gear at the back of the boat and lead the group through the underwater trench.</li>
+                            <li>Equip the metal detector and sweep the seabed outside the wreck. When the light turns green, look down for the pickup icon. Collect all three treasures.</li>
+                            <li>Free Dobbs from the grate and head back to the boat. If you want Dobbs to survive, equip the harpoon and hit the shark twice when it appears.</li>
+                        </ol>
+                    </section>
+
+                    <section class="directory-steps">
+                        <h3>Reward</h3>
+                        <p>$400.</p>
+                    </section>
+
+                    <p class="guide-source">Source <a href="https://www.powerpyx.com/gta-6-island-dreams-work-for-kenton-walkthrough/">PowerPyx’s Island Dreams walkthrough</a></p>
+                </div>
+            </details>
+
+            <details id="feng-shui" class="directory-card">
+                <summary>10. Feng Shui (Meet Cal)</summary>
+                <div class="directory-walkthrough">
+                    <p>Help Cal rearrange Jason’s house before Lucia comes home.</p>
+                    <section class="directory-steps">
+                        <h3>How to Start</h3>
+                        <p><strong>Map label</strong> · Meet Cal</p>
+                        <p>Return to Jason’s house after Island Dreams when the mission marker appears.</p>
+                    </section>
+
+                    <section class="directory-steps">
+                        <h3>Mission Walkthrough</h3>
+                        <ol>
+                            <li>Grab a beer from the fridge and sit with Cal.</li>
+                            <li>Help move the TV, coffee table, couch, and chair. If Cal asks about the coffee table again, you can say it’s fine and move on.</li>
+                            <li>Follow the prompts for Tenebrae Lux and Street Trash III. The next morning’s phone call about Lucia’s release closes the mission.</li>
+                        </ol>
+                    </section>
+
+
+                    <p class="guide-source">Source <a href="https://www.powerpyx.com/gta-6-feng-shui-meet-cal-walkthrough/">PowerPyx’s Feng Shui walkthrough</a></p>
+                </div>
+            </details>
+        </div>
+        <p id="noMissions" class="directory-message" role="status" hidden>No missions found. Try a different search.</p>
 
         <!-- Pagination -->
         <nav
@@ -212,6 +494,43 @@
 
     </footer>
 
-    <script src="script.js"></script>
+    <script>
+        const search = document.getElementById("missionSearch");
+        const cards = Array.from(document.querySelectorAll("#missionList details"));
+        const pagination = document.getElementById("pagination");
+        const noMissions = document.getElementById("noMissions");
+        const pageSize = 10;
+
+        function showMissions(page = 1) {
+            const query = search.value.trim().toLowerCase();
+            const matches = cards.filter(card =>
+                card.querySelector("summary").textContent.toLowerCase().includes(query)
+            );
+            const start = (page - 1) * pageSize;
+            const visibleCards = new Set(matches.slice(start, start + pageSize));
+
+            cards.forEach(card => {
+                card.hidden = !visibleCards.has(card);
+            });
+            noMissions.hidden = matches.length > 0;
+            pagination.replaceChildren();
+
+            const pageCount = Math.ceil(matches.length / pageSize);
+            for (let number = 1; number <= pageCount && pageCount > 1; number++) {
+                const button = document.createElement("button");
+                button.type = "button";
+                button.textContent = number;
+                if (number === page) {
+                    button.classList.add("active");
+                    button.setAttribute("aria-current", "page");
+                }
+                button.addEventListener("click", () => showMissions(number));
+                pagination.append(button);
+            }
+        }
+
+        search.addEventListener("input", () => showMissions());
+        showMissions();
+    </script>
 </body>
 </html>
